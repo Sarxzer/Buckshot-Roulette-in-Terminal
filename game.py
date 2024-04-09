@@ -6,13 +6,13 @@ import queue
 import os
 
 class Game:
-    #def __init__(self):
-    #    self.save = open("save.txt", "a+") 
-    #    self.printType("Welcome, sir!")
-    #    if self.save.read() == "":
-    #        self.firstTime()
-    #    else:
-    #        self.menu()
+    def __init__(self):
+        self.save = open("save.txt", "a+") 
+        self.printType("Welcome, sir!")
+        if self.save.read() == "":
+            self.firstTime()
+        else:
+            self.menu()
     
     def clear(self):
         os.system("cls" if os.name == "nt" else "clear")
@@ -202,4 +202,4 @@ class Game:
     
     #def game(self):
 
-Game().drawTable()
+Game()
